@@ -1,0 +1,43 @@
+generator client {
+    provider        = "prisma-client-js"
+}
+
+
+datasource db {
+    provider     = "mysql"
+    url          = env("DATABASE_URL")
+    relationMode = "prisma"
+}
+
+
+
+model fbbsubs {
+    id String @id @default(cuid())
+    state String
+    indicator String
+    declaration_month Int
+    declaration_year Int
+    household String
+    total_subs Int
+}
+
+
+model mbbsubs {
+    id String @id @default(cuid())
+    state String
+    service String
+    service_type String
+    declaration_month Int
+    declaration_year Int
+    household String
+    total_subs Int
+}
+
+model mbbtraffic {
+    id String @id @default(cuid())
+    declaration_month Int
+    declaration_year Int
+    traffic_in Float
+}
+
+

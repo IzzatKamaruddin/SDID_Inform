@@ -286,7 +286,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>&copy; INFORM by SDID. All rights reserved</p>
+              <p>&copy; 2025 Solid. All rights reserved</p>
             </motion.div>
 
             <motion.div
