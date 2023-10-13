@@ -15,7 +15,7 @@ model fbbsubs {
     id String @id @default(cuid())
     state String
     indicator String
-    declaration_month Int
+    declaration_quarter Int
     declaration_year Int
     household String
     total_subs Int
@@ -27,7 +27,7 @@ model mbbsubs {
     state String
     service String
     service_type String
-    declaration_month Int
+    declaration_quarter Int
     declaration_year Int
     household String
     total_subs Int
@@ -35,9 +35,17 @@ model mbbsubs {
 
 model mbbtraffic {
     id String @id @default(cuid())
-    declaration_month Int
+    declaration_quarter Int
     declaration_year Int
     traffic_in Float
+}
+
+model fbbpenrate {
+    id String @id @default(cuid())
+    state String
+    declaration_quarter Int
+    declaration_year Int
+    penrate Float
 }
 
 
