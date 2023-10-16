@@ -1,6 +1,6 @@
 generator client {
     provider        = "prisma-client-js"
-    previewFeatures = ["createMany"]
+    previewFeatures = ["referentialIntegrity"]
 }
 
 
@@ -15,16 +15,31 @@ datasource db {
 model fbbsubs {
     id String @id @default(cuid())
     state String
-    indicator String
     declaration_quarter Int
     declaration_year Int
     household String
     total_subs Int
 }
 
+model catgory {
+    id Int @id @default(cuid())
+    name String
+    description String
+    subs subs[]
+} 
+
+model subs{
+    id Int @id @default(cuid())
+    state String
+    declaration_quarter Int
+    declaration_year Int
+    total_subs Int
+    category    Category? @relation(fields: [category_id], references: [id])
+    category_id Int
+}
 
 model mbbsubs {
-    id String @id @default(cuid())
+    id Int @id @default(cuid())
     state String
     service String
     service_type String
@@ -35,14 +50,14 @@ model mbbsubs {
 }
 
 model mbbtraffic {
-    id String @id @default(cuid())
+    id Int @id @default(cuid())
     declaration_quarter Int
     declaration_year Int
     traffic_in Float
 }
 
 model fbbpenrate {
-    id String @id @default(cuid())
+    id Int @id @default(cuid())
     state String
     declaration_quarter Int
     declaration_year Int
