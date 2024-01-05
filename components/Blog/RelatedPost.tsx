@@ -8,11 +8,11 @@ const RelatedPost = async () => {
     <>
       <div className="animate_top rounded-md shadow-solid-13 bg-white dark:bg-blacksection border border-stroke dark:border-strokedark p-9">
         <h4 className="font-semibold text-2xl text-black dark:text-white mb-7.5">
-          Related Posts
+          Related Dashboard
         </h4>
 
         <div>
-          {BlogData.slice(0, 3).map((post, key) => (
+          {BlogData.slice(0, 4).map((post, key) => (
             <div
               className="flex xl:flex-nowrap flex-wrap gap-4 2xl:gap-6 mb-7.5"
               key={key}
@@ -25,9 +25,9 @@ const RelatedPost = async () => {
                 )}
               </div>
               <h5 className="font-medium text-md text-black dark:text-white hover:text-primary dark:hover:text-primary transition-all duration-300">
-                <Link href={`/blog/blog-details`}>
+                <Link href={post.link}>
                   {" "}
-                  {post.title.slice(0, 40)}...
+                  {post.title.slice(0, 15)}...
                 </Link>
               </h5>
             </div>

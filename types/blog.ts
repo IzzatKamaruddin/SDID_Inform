@@ -9,6 +9,20 @@ export type Author = {
 export type Blog = {
   _id: number;
   title: string;
+  link: string;
+  slug?: any;
+  metadata?: string;
+  body?: string;
+  mainImage?: any;
+  author?: Author;
+  tags?: string[];        
+  publishedAt?: string;
+};
+
+export type Menu = {
+  _id: number;
+  title: string;
+  link: string;
   slug?: any;
   metadata?: string;
   body?: string;

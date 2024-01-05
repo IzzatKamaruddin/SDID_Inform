@@ -102,19 +102,6 @@ const About = () => {
                 </a>
               </div>
 
-              <div className="mt-7.5 flex items-center gap-5">
-                <div className="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
-                  <p className="text-black dark:text-white font-semibold text-metatitle2">
-                    
-                  </p>
-                </div>
-                <div className="w-3/4">
-                  <h5 className="text-black dark:text-white text-metatitle2 mb-0.5">
-                    Statistical Dashboard by  Quarter
-                  </h5>
-                  <p>---</p>
-                </div>
-              </div>
               {/* <div className="mt-7.5 flex items-center gap-5">
                 <div className="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
                   <p className="text-black dark:text-white font-semibold text-metatitle2">

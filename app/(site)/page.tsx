@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Hero from "@/components/Hero";
-import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
 import About from "@/components/About";
 import FeaturesTab from "@/components/FeaturesTab";
@@ -12,6 +11,7 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import Menu from "@/components/Menu";
 
 export const metadata: Metadata = {
   title: "INFORM by SDID",
@@ -24,8 +24,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Feature />
+      <Menu />
       <About />
+      {/* <Feature /> */}
       {/*<FeaturesTab />
        <FunFact />
       <Integration />
@@ -33,8 +34,8 @@ export default function Home() {
       <FAQ />
       <Testimonial />
       <Pricing /> */}
+      {/* <Blog /> */}
       <Contact />
-      <Blog />
     </main>
   );
 }

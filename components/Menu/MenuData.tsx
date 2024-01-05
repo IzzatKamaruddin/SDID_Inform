@@ -1,47 +1,46 @@
-import { Blog } from "@/types/blog";
+import { Menus } from "@/types/menus";
 
-const BlogData: Blog[] = [
+const DataMenu: Menus[] = [
   { 
     _id: 1,
     mainImage: "/images/blog/blog-01.png",
-    title: "Communications and Multimedia",
-    link: "/blog/blog-details-c&m",
+    title: "Dashboards",
+    path: "/feature",
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },
   { 
     _id: 2,
-    mainImage: "/images/blog/blog-01.png",
-    title: "Postal and Courier",
-    link: "/blog/blog-p&c",
+    mainImage: "/images/blog/blog-02.png",
+    title: "Data Hub",
+    path: "/blog/blog-p&c",
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },
   { 
     _id: 3,
-    mainImage: "/images/blog/blog-02.png",
-    title: "Rangkaian Pakej",
-    link: `/blog/blog-pa`,
+    mainImage: "/images/blog/blog-01.png",
+    title: "Data Catalogue",
+    path: `/blog/blog-pa`,
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },
-  {
+  { 
     _id: 4,
-    mainImage: "/images/blog/blog-03.png",
-    title: "State Dossier.",
-    link:`/blog/blog-sd`,
+    mainImage: "/images/blog/blog-02.png",
+    title: "Data Query",
+    path: `/blog/blog-pa`,
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },
   { 
     _id: 5,
-    mainImage: "/images/blog/blog-03.png",
-    title: "Parcel Analytics",
-    link:`/blog/blog-c&m`,
+    mainImage: "/images/blog/blog-01.png",
+    title: "Reports and Publications",
+    path: `/blog/blog-pa`,
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },
-  
 ];
 
-export default BlogData;
+export default DataMenu;

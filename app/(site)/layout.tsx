@@ -1,5 +1,4 @@
 "use client";
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Lines from "@/components/Lines";
@@ -24,7 +23,6 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="light"
         >
-
             <Lines />
             <Header />
             <ToasterContext />

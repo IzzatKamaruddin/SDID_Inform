@@ -11,66 +11,37 @@ const menuData: Menu[] = [
     id: 2,
     title: "Dashboards",
     newTab: false,
-    path: "/#features"
+    path: "/feature"
   },
   {
-    id: 2.1,
+    id: 3,
     title: "Data Catalog",
     newTab: false,
     path: "/blog"
   },
   {
-    id: 2.3,
-    title: "Reports and Publications",
+    id: 4,
+    title: "Data Hub",
     newTab: false,
     path: "/docs"
   },
+
   {
-    id: 3,
-    title: "Postal And Courier",
+    id: 5,
+    title: "Data Query",
     newTab: false,
-    submenu: [
-      {
-        id: 31,
-        title: "Blog Grid",
-        newTab: false,
-        path: "/blog",
-      },
-      {
-        id: 34,
-        title: "Sign In",
-        newTab: false,
-        path: "/auth/signin",
-      },
-      {
-        id: 35,
-        title: "Sign Up",
-        newTab: false,
-        path: "/auth/signup",
-      },
-      {
-        id: 35,
-        title: "Docs",
-        newTab: false,
-        path: "/docs",
-      },
-      {
-        id: 35.1,
-        title: "Support",
-        newTab: false,
-        path: "/support",
-      },
-      {
-        id: 36,
-        title: "404",
-        newTab: false,
-        path: "/error",
-      },
-    ],
+    path: "/support"
   },
 
   {
-    id: 4,
+    id: 6,
+    title: "Reports and Publications",
+    newTab: false,
+    path: "/support"
+  },
+
+  {
+    id: 7,
     title: "Support",
     newTab: false,
     path: "/support"

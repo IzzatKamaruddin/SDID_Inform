@@ -4,45 +4,50 @@ const featuresData: Feature[] = [
   {
     id: 1,
     icon: "/images/icon/icon-01.svg",
-    title: "Crafted for SaaS",
+    title: "Communication and Multimedia",
+    link: `/blog/blog-details-c&m`,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Communication and Multimedia Statistical Dashboard with latest updated quarter data.",
   },
   {
     id: 2,
     icon: "/images/icon/icon-02.svg",
-    title: "High-quality Design",
+    title: "Postal and Courier",
+    link: `/blog/blog-p&c`,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Postal and Courier Statistical Dashboard with latest updated quarter data",
   },
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
-    title: "Next.js 13 + TypeScript",
+    title: "Rangkaian PAKEJ Dashboard",
+    link: `/blog/blog-pa`,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Provides a compilation of locations that offer pick up and drop off (PUDO) services of parcel/courier items from trusted members of the PUDO network.",
   },
   {
     id: 4,
     icon: "/images/icon/icon-04.svg",
-    title: "Sanity Blog and Docs",
+    title: "State Dossier Dashboard",
+    link: `/blog/blog-details`,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "A dossier of key indicators related to each state in Malaysia",
   },
   {
     id: 5,
     icon: "/images/icon/icon-05.svg",
-    title: "DB, Auth and Stripe",
+    title: "Parcel Analytics Dashboard",
+    link: `/blog/blog-pa`,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Contains a summary of domestic parcel traffic movements from top 10 courier licensees in Malaysia.",
   },
-  {
-    id: 6,
-    icon: "/images/icon/icon-06.svg",
-    title: "Regular Free Updates",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
-  },
+  // {
+  //   id: 6,
+  //   icon: "/images/icon/icon-06.svg",
+  //   title: "Regular Free Updates",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+  // },
 ];
 
 export default featuresData;

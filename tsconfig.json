@@ -36,8 +36,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "prisma/data.js"  ],
+    ".next/types/**/*.ts",
+    "prisma/subs.ts", "app/(site)/blog/p&c-dash/dashboard/page.js", "app/(site)/blog/blog-details-c&m/c&m-dash/dashboard/page.js"  ],
   "exclude": [
     "node_modules"
   ]
